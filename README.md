@@ -2,6 +2,8 @@
 
 An embarrassing simple command line tool that triggers a notification when a command has completed.
 
+![demo](/docs/demo.gif)
+
 ## Usage
 
 ```
