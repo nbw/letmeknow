@@ -19,6 +19,10 @@ Also:
 lmk --help
 ```
 
+## Mac Install
+
+`curl -o /usr/local/bin/lmk https://raw.githubusercontent.com/nbw/letmeknow/master/lmk | chmod +x lmk`
+
 ## Supported Platforms
 
 _Let Me Know_ leverages [osascript](https://ss64.com/osx/osascript.html) to trigger notifications and so for the time being is **Max OSX only**. 
@@ -33,4 +37,4 @@ _Let Me Know_ is incredibly simple. Check out [noti](https://github.com/variadic
 
 ## Contributions?
 
-Please contribute or send me a suggestion at contact@nathanwillson.com.
+Feel free to contribute or send me a suggestion at contact@nathanwillson.com.
