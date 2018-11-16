@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+COLOR_MAGENTA="\033[35m"
+COLOR_CYAN="\033[36m"
+case "$1" in
+  --help|-h|--info)
+    echo -e "\n\033[1m  ◹ LET ME KNOW ◺\n\033[0m"
+    echo -e "  Get notified when a command completes.\n\n  Currently supports Mac OSX only.\n"
+    echo -e "  ${COLOR_MAGENTA}Usage:\n     ${COLOR_CYAN}lmk {{command}}\n"
+    echo -e "  ${COLOR_MAGENTA}Example:\n     ${COLOR_CYAN}lmk ps aux\n"
+    exit 1
+esac
+
+notif(){
+  title=$1
+  shift 
+  script='display notification "'$*'" with title "'$title'"'
+  osascript -e "$script"
+}
+
+$* && (notif "Complete" $*) || (notif "Error" $*)
+
