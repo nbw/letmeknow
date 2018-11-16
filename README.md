@@ -22,7 +22,7 @@ lmk --help
 ## Mac Install
 
 ```
-curl -o /usr/local/bin/lmk https://raw.githubusercontent.com/nbw/letmeknow/master/lmk & chmod +x /usr/local/bin/lmk
+curl -o /usr/local/bin/lmk https://raw.githubusercontent.com/nbw/letmeknow/master/lmk && chmod +x /usr/local/bin/lmk
 ```
 
 ## Supported Platforms
